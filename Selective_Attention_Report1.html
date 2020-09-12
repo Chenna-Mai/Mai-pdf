@@ -18,750 +18,787 @@
     <!-- progres bar -->
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
-<style>
-    @font-face {
-  font-family: "Gotham Rounded";
-  src: url("https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Book.otf");
-}
-
-@font-face {
-  font-family: "Gotham Rounded";
-  src: url("https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Bold.otf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Gotham Rounded";
-  src: url(".https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Light.otf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Gotham Rounded";
-  src: url(".https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Medium.otf");
-  font-weight: 500;
-}
-
-* {
-  font-family: "Gotham Rounded";
-}
-
-body,
-html {
-  font-family: "Gotham Rounded";
-  background: #e5e5e5;
-}
-
-.margin_zero {
-  margin: 0px;
-}
-
-.headerclss {
-  position: relative;
-  width: 434px;
-  height: 108px;
-  top: 39px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  /* or 120% */
-  text-align: center;
-  color: #ffffff;
-}
-
-.Theaderclss {
-  position: relative;
-  top: 13px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  /* or 124% */
-  text-align: center;
-  color: #ffffff;
-}
-
-.li_sction1 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 29px;
-  /* identical to box height, or 240% */
-  color: #43484b;
-  padding: 0;
-  margin-left: 20px;
-}
-
-.li_sction1 li {
-  margin: 0;
-}
-.headertext {
-  position: relative;
-  top: 40px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 11px;
-  letter-spacing: 1px;
-  line-height: 19px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.headerdiv {
-  width: 555px;
-  height: 147px;
-  left: 20px;
-  top: 24px;
-  background: #7636dd;
-  margin-top: 20px;
-  padding: 0px 45px 0 45px;
-}
-
-.Theaderdiv {
-  width: 540px;
-  height: 48px;
-  left: 28px;
-  top: 439px;
-  background: #7636dd;
-}
-
-.statscss {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  color: #43484b;
-}
-
-.seatText {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  margin: 10px 0 10px 0;
-  font-size: 12px;
-  line-height: 17px;
-  /* or 140% */
-  color: #6e768a;
-  margin-top: 5px;
-}
-
-.overall {
-  margin: 5px 0px;
-  display: inline-block;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 22px;
-  text-align: center;
-  color: #43484b;
-  margin-bottom: 25px;
-}
-
-.statsgride {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #ffffff;
-  position: relative;
-  top: 16px;
-}
-
-.statsdtlcss {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 12px;
-  color: #ffffff;
-  float: right;
-  position: relative;
-  top: 16px;
-  margin-left: 10px;
-}
-
-.statsdtlgrid {
-  font-family: Gotham Rounded;
-  color: #ffffff;
-  margin-left: 2px;
-  margin-bottom: 15px;
-}
-
-.colgrid {
-  padding: 0px 11px 0px 11px;
-  background: rgba(118, 54, 221, 0.8);
-  width: 123.5px;
-  height: 62.5px;
-  /* border: 0.5px solid rgba(0, 0, 0, 0.1); */
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: flex-start;
-}
-
-.bulletNums {
-  background: rgba(118, 54, 221, 0.5);
-  padding: 3px 6px 3px 6px;
-  border-radius: 50%;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 29px;
-  /* or 288% */
-  color: #ffffff;
-  margin-right: 13px;
-}
-
-.bulletlist {
-  border-bottom: 1px solid black;
-}
-hr {
-  margin-top: 0px;
-  margin-bottom: 15px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-li {
-  margin: 1px 3px 10px 1px;
-}
-
-.customhr {
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;
-  margin-left: 20px;
-}
-
-.containercls {
-  margin-bottom: 15px;
-  width: 595px;
-  background: #ffffff;
-  margin-top: 20px;
-  padding: 0 20px 0 20px;
-}
-
-/* page 2 */
-
-.container2 {
-  border: solid 25px #fff;
-  background: #f1f1f1;
-  margin-top: 20px;
-  padding: 0 20px 0 20px;
-  width: 595px;
-  margin-bottom: 15px;
-}
-
-.headerdiv2 {
-  margin-bottom: 15px;
-}
-
-.headerclss2 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 22px;
-  /* identical to box height, or 124% */
-  color: #43484b;
-}
-
-.active_list {
-  height: 100px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
-  border: 1px solid rgba(118, 54, 221, 0.15);
-}
-
-.statsdtlgrid2 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 25px;
-  /* or 180% */
-  color: #6e768a;
-  padding: 3px 8px 8px 20px;
-}
-
-.slective_action2 {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  padding: 15px;
-}
-
-.selectiveText {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  /* or 160% */
-  color: #43484b;
-}
-
-.circle-textpole {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 102px;
-  height: 65px;
-  background: #683bb8;
-  border-radius: 100px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 29px;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.circle-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 67px;
-  height: 67px;
-  background: #683bb8;
-  border-radius: 100px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 29px;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  margin-top: 25px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-.header-title {
-  margin-left: 10px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 20px;
-  color: #43484b;
-}
-
-.circle-text-perc {
-  font-size: 14px;
-  margin-top: 7px;
-}
-
-.peer-title {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #43484b;
-  margin: 25px 102px 25px 102px;
-}
-
-.peer-comp {
-  margin: 10px;
-  margin-top: 20px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
-  border: 1px solid rgba(118, 54, 221, 0.15);
-}
-
-.peer-icon {
-  width: 7px;
-  height: 20px;
-  margin-right: 3px;
-  margin-bottom: 9px;
-}
-
-.peerdiv1 {
-  width: 50%;
-  padding: 0;
-  padding-left: 100px;
-}
-
-.peerdiv2 {
-  width: 50%;
-  padding: 0;
-  padding-left: 16px;
-  padding-right: 100px;
-}
-
-.stats_peer {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 25px;
-  /* or 180% */
-  color: #6e768a;
-}
-
-.pace_dtl {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 22px;
-  color: #389ace;
-}
-
-.pace_dtlR {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 22px;
-  color: #df117a;
-}
-
-.secondHeader {
-  display: table-header-group;
-  position: fixed;
-  top: 0px;
-}
-
-.testHeader {
-  display: table-header-group;
-  visibility: hidden;
-}
-
-/* page4 */
-
-.calculatecss {
-  padding: 10px;
-  /* margin: 15px; */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-.ulboreder4 {
-  margin-top: 45px;
-  background: linear-gradient(0deg, #ffffff, #ffffff);
-  border: 1px solid rgba(118, 54, 221, 0.15);
-  padding: 0px;
-}
-
-.liheader {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  /* or 160% */
-  text-align: center;
-  color: #6e768a;
-}
-
-.list-group-item4 {
-  position: relative;
-  display: list-item;
-  padding: 10px 13px;
-  margin-left: 27px;
-  margin-bottom: -1px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-.liheaderspan {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 22px;
-  /* or 160% */
-  text-align: center;
-  color: #6e768a;
-}
-
-/* page 5 */
-
-.madterselective5 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 25px;
-  /* or 180% */
-  color: #6e768a;
-}
-
-.bulletNums5 {
-  background: #683bb8;
-  height: 8px;
-  width: 8px;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 11px;
-}
-
-.lisection5 {
-  margin: 10px 0;
-}
-
-.lisectionText5 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
-  color: #43484b;
-  vertical-align: top;
-}
-
-.set_backgroung5 {
-  background: linear-gradient(0deg, #ffffff, #ffffff);
-  border: 1px solid rgba(118, 54, 221, 0.15);
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.circle_text5 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 108px;
-  height: 76px;
-  background: #fdf4f1;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-  border-radius: 100px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.circle_text55 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 58px;
-  height: 58px;
-  background: #fdf4f1;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
-  border-radius: 100px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 29px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.header_title5 {
-  margin-left: 10px;
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #43484b;
-  display: block;
-}
-
-.setimg5 {
-  margin: 10px 0px;
-  margin-bottom: 20px;
-}
-
-/* page 6 */
-.milestone-ach {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 24px 0px 15px 0px;
-}
-.divtext6 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 25px;
-  color: #6e768a;
-}
-
-.achieved_title1 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 19px;
-  color: #6e768a;
-  margin: 2px -1px 1px 14px;
-}
-
-.achieved_title2 {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 19px;
-  color: #6e768a;
-  margin: 2px -1px 1px 14px;
-}
-
-.achievedcol {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 14px;
-  line-height: 25px;
-  /* or 180% */
-  color: #6e768a;
-  padding: 0px;
-}
-
-.achievCss {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 22px;
-  /* or 112% */
-  text-align: center;
-  color: #43484b;
-}
-
-.spanage {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
-  /* or 140% */
-  text-align: center;
-  color: #ffffff;
-}
-
-/* 4page */
-
-.activity_listing {
-  height: 10px;
-  width: 10px;
-  background-color: #f22182;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.activity_listing_blue {
-  height: 10px;
-  width: 10px;
-  background-color: #389ace;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.activity_li_text {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 13px;
-  padding: 0 21px 0 20px;
-  line-height: 17px;
-  /* or 140% */
-  color: #6e768a;
-}
-
-.activity_li_textLeft {
-  float: right;
-}
-
-.doughnutcss {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 140% */
-  text-align: center;
-  color: #43484b;
-}
-
-#scorcard {
-  margin-left: 21px;
-  margin-top: 3px;
-  width: 181px;
-  height: 84px;
-}
-
-/* svg {
-  fill: none;
-  stroke: red;
-  stroke-width: 5px !important;
-  stroke-linecap: round;
-  /* -webkit-filter: drop-shadow( -3px -2px 5px gray);
-    filter: drop-shadow( -3px -2px 5px gray); 
-} */
-
-.scordcss {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  color: #43484b;
-  top: -110px;
-  right: -50px;
-  position: absolute;
-  min-width: 100px;
-}
-
-.scoredpercentage {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 44px;
-  line-height: 58px;
-  text-align: center;
-  color: #98e240;
-  position: absolute;
-  top: -45px;
-  right: -55px;
-}
-
-#impactscorcard {
-  margin-top: 25px;
-  width: 108px;
-  height: 54px;
-  margin-bottom: 60px;
-  margin-left: 90px;
-}
-
-/* #lineprogress {
+    <style>
+        @font-face {
+            font-family: "Gotham Rounded";
+            src: url("https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Book.otf");
+        }
+        
+        @font-face {
+            font-family: "Gotham Rounded";
+            src: url("https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Bold.otf");
+            font-weight: 500;
+        }
+        
+        @font-face {
+            font-family: "Gotham Rounded";
+            src: url(".https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Light.otf");
+            font-weight: 300;
+        }
+        
+        @font-face {
+            font-family: "Gotham Rounded";
+            src: url(".https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/GothamRnd-Medium.otf");
+            font-weight: 500;
+        }
+        
+        * {
+            font-family: "Gotham Rounded";
+        }
+        
+        body,
+        html {
+            font-family: "Gotham Rounded";
+            background: #e5e5e5;
+        }
+        
+        .margin_zero {
+            margin: 0px;
+        }
+        
+        .headerclss {
+            position: relative;
+            width: 434px;
+            height: 108px;
+            top: 39px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            /* or 120% */
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .Theaderclss {
+            position: relative;
+            top: 13px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            /* or 124% */
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .li_sction1 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 29px;
+            /* identical to box height, or 240% */
+            color: #43484b;
+            padding: 0;
+            margin-left: 20px;
+        }
+        
+        .li_sction1 li {
+            margin: 0;
+        }
+        
+        .headertext {
+            position: relative;
+            top: 40px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 11px;
+            letter-spacing: 1px;
+            line-height: 19px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .headerdiv {
+            width: 555px;
+            height: 147px;
+            left: 20px;
+            top: 24px;
+            background: #7636dd;
+            margin-top: 20px;
+            padding: 0px 45px 0 45px;
+        }
+        
+        .Theaderdiv {
+            width: 540px;
+            height: 48px;
+            left: 28px;
+            top: 439px;
+            background: #7636dd;
+        }
+        
+        .statscss {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #43484b;
+        }
+        
+        .seatText {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            margin: 10px 0 10px 0;
+            font-size: 12px;
+            line-height: 17px;
+            /* or 140% */
+            color: #6e768a;
+            margin-top: 5px;
+        }
+        
+        .overall {
+            margin: 5px 0px;
+            display: inline-block;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            text-align: center;
+            color: #43484b;
+            margin-bottom: 25px;
+        }
+        
+        .statsgride {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            top: 16px;
+        }
+        
+        .statsdtlcss {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            color: #ffffff;
+            float: right;
+            position: relative;
+            top: 16px;
+            margin-left: 10px;
+        }
+        
+        .statsdtlgrid {
+            font-family: Gotham Rounded;
+            color: #ffffff;
+            margin-left: 2px;
+            margin-bottom: 15px;
+        }
+        
+        .colgrid {
+            padding: 0px 11px 0px 11px;
+            background: rgba(118, 54, 221, 0.8);
+            width: 123.5px;
+            height: 62.5px;
+            /* border: 0.5px solid rgba(0, 0, 0, 0.1); */
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: flex-start;
+        }
+        
+        .bulletNums {
+            background: rgba(118, 54, 221, 0.5);
+            padding: 3px 6px 3px 6px;
+            border-radius: 50%;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 29px;
+            /* or 288% */
+            color: #ffffff;
+            margin-right: 13px;
+        }
+        
+        .bulletlist {
+            border-bottom: 1px solid black;
+        }
+        
+        hr {
+            margin-top: 0px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        li {
+            margin: 1px 3px 10px 1px;
+        }
+        
+        .customhr {
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+            margin-left: 20px;
+        }
+        
+        .containercls {
+            margin-bottom: 15px;
+            /* width: 595px; */
+            background: #ffffff;
+            margin-top: 20px;
+            padding: 0 20px 0 20px;
+        }
+        /* page 2 */
+        
+        .container2 {
+            border: solid 25px #fff;
+            background: #f1f1f1;
+            margin-top: 20px;
+            padding: 0 20px 0 20px;
+            /* width: 595px; */
+            margin-bottom: 15px;
+        }
+        
+        .containercolor {
+            background: #f1f1f1;
+        }
+        
+        .headerdiv2 {
+            margin-bottom: 15px;
+        }
+        
+        .headerclss2 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            /* identical to box height, or 124% */
+            color: #43484b;
+        }
+        
+        .active_list {
+            height: 100px;
+            background: linear-gradient(0deg, #ffffff, #ffffff);
+            border: 1px solid rgba(118, 54, 221, 0.15);
+        }
+        
+        .statsdtlgrid2 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 25px;
+            /* or 180% */
+            color: #6e768a;
+            padding: 3px 8px 8px 20px;
+        }
+        
+        .slective_action2 {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        
+        .selectiveText {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            /* or 160% */
+            color: #43484b;
+        }
+        
+        .circle-textpole {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 102px;
+            height: 65px;
+            background: #683bb8;
+            border-radius: 100px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 29px;
+            line-height: 29px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .circle-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 67px;
+            height: 67px;
+            background: #683bb8;
+            border-radius: 100px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 29px;
+            line-height: 29px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .flex-container {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .header-title {
+            margin-left: 10px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 20px;
+            color: #43484b;
+        }
+        
+        .circle-text-perc {
+            font-size: 14px;
+            margin-top: 7px;
+        }
+        
+        .peer-title {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #43484b;
+            margin: 25px 102px 25px 102px;
+        }
+        
+        .peer-comp {
+            margin: 10px;
+            margin-top: 20px;
+            background: linear-gradient(0deg, #ffffff, #ffffff);
+            border: 1px solid rgba(118, 54, 221, 0.15);
+        }
+        
+        .peer-icon {
+            width: 7px;
+            height: 20px;
+            margin-right: 3px;
+            margin-bottom: 9px;
+        }
+        
+        .peerdiv1 {
+            width: 50%;
+            padding: 0;
+            padding-left: 100px;
+        }
+        
+        .peerdiv2 {
+            width: 50%;
+            padding: 0;
+            padding-left: 16px;
+            padding-right: 100px;
+        }
+        
+        .margin_bottom20 {
+            margin-bottom: 20px;
+        }
+        
+        .stats_peer {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 25px;
+            /* or 180% */
+            color: #6e768a;
+        }
+        
+        .pace_dtl {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 22px;
+            color: #389ace;
+        }
+        
+        .pace_dtlR {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 22px;
+            color: #df117a;
+        }
+        
+        .secondHeader {
+            display: table-header-group;
+            position: fixed;
+            top: 0px;
+        }
+        
+        .testHeader {
+            display: table-header-group;
+            visibility: hidden;
+        }
+        /* page4 */
+        
+        .calculatecss {
+            padding: 10px;
+            /* margin: 15px; */
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .ulboreder4 {
+            margin-top: 45px;
+            background: linear-gradient(0deg, #ffffff, #ffffff);
+            border: 1px solid rgba(118, 54, 221, 0.15);
+            padding: 0px;
+        }
+        
+        .liheader {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            /* or 160% */
+            text-align: center;
+            color: #6e768a;
+        }
+        
+        .list-group-item4 {
+            position: relative;
+            display: list-item;
+            padding: 10px 13px;
+            margin-left: 27px;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .liheaderspan {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            /* or 160% */
+            text-align: center;
+            color: #6e768a;
+        }
+        /* page 5 */
+        
+        .madterselective5 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 25px;
+            /* or 180% */
+            color: #6e768a;
+        }
+        
+        .bulletNums5 {
+            background: #683bb8;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 11px;
+        }
+        
+        .lisection5 {
+            margin: 10px 0;
+        }
+        
+        .lisectionText5 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #43484b;
+            vertical-align: top;
+        }
+        
+        .set_backgroung5 {
+            background: linear-gradient(0deg, #ffffff, #ffffff);
+            /* border: 1px solid rgba(118, 54, 221, 0.15);
+            margin-top: 30px;
+            margin-bottom: 30px; */
+        }
+        
+        .paddond0 {
+            padding: 0px !important;
+        }
+        
+        .bordernone {
+            border: none !important;
+        }
+        
+        .padding-left {
+            padding-left: 33px !important;
+        }
+        
+        .paddinglt10 {
+            padding-left: 10px;
+        }
+        
+        .paddingrt10 {
+            padding-right: 10px;
+        }
+        
+        .padding-right {
+            padding-right: 33px !important;
+        }
+        
+        .padding-btm {
+            padding-bottom: 33px !important;
+        }
+        
+        .circle_text5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 108px;
+            height: 76px;
+            background: #fdf4f1;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 100px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 29px;
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        .circle_text55 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 58px;
+            height: 58px;
+            background: #fdf4f1;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+            border-radius: 100px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 29px;
+            text-align: center;
+            color: #ffffff;
+            margin-left: 10px;
+        }
+        
+        .header_title5 {
+            margin-left: 10px;
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: #43484b;
+            display: block;
+        }
+        
+        .setimg5 {
+            margin: 10px 0px;
+            margin-bottom: 20px;
+        }
+        /* page 6 */
+        
+        .milestone-ach {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 24px 0px 15px 0px;
+        }
+        
+        .divtext6 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 25px;
+            color: #6e768a;
+        }
+        
+        .achieved_title1 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 19px;
+            color: #6e768a;
+            margin: 2px -1px 1px 14px;
+            padding-left: 10px;
+        }
+        
+        .achieved_title2 {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 19px;
+            color: #6e768a;
+            margin: 2px -1px 1px 14px;
+        }
+        
+        .achievedcol {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 14px;
+            line-height: 25px;
+            /* or 180% */
+            color: #6e768a;
+            padding: 0px;
+        }
+        
+        .achievCss {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 22px;
+            /* or 112% */
+            text-align: center;
+            color: #43484b;
+        }
+        
+        .spanage {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            /* or 140% */
+            text-align: center;
+            color: #ffffff;
+        }
+        /* 4page */
+        
+        .activity_listing {
+            height: 10px;
+            width: 10px;
+            background-color: #f22182;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .activity_listing_blue {
+            height: 10px;
+            width: 10px;
+            background-color: #389ace;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .activity_li_text {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 13px;
+            padding: 0 21px 0 20px;
+            line-height: 17px;
+            /* or 140% */
+            color: #6e768a;
+        }
+        
+        .activity_li_textLeft {
+            float: right;
+        }
+        
+        .doughnutcss {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 20px;
+            /* or 140% */
+            text-align: center;
+            color: #43484b;
+        }
+        
+        #scorcard {
+            margin-left: 21px;
+            margin-top: 3px;
+            width: 181px;
+            height: 84px;
+        }
+        
+        svg {
+            fill: none;
+            stroke: red;
+            stroke-width: 5px !important;
+            stroke-linecap: round;
+            /* -webkit-filter: drop-shadow( -3px -2px 5px gray);
+    filter: drop-shadow( -3px -2px 5px gray); */
+        }
+        
+        .scordcss {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #43484b;
+            top: -110px;
+            right: -50px;
+            position: absolute;
+            min-width: 100px;
+        }
+        
+        .scoredpercentage {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 44px;
+            line-height: 58px;
+            text-align: center;
+            color: #98e240;
+            position: absolute;
+            top: -45px;
+            right: -55px;
+        }
+        
+        #impactscorcard {
+            margin-top: 25px;
+            width: 111px;
+            height: 63px;
+            float: right;
+            margin-right: 10px;
+            /* margin-bottom: 60px;
+            margin-left: 90px; */
+        }
+        /* #lineprogress {
     margin: 20px;
     width: 400px;
     height: 8px;
     position: relative;
 } */
-
-#lineprogress {
-  background: orange;
-  display: block;
-  border-radius: 9px;
-  height: 20px;
-  width: 300px;
-}
-
-/* #lineprogress:after {
+        
+        #lineprogress {
+            background: orange;
+            display: block;
+            border-radius: 9px;
+            height: 20px;
+            width: 300px;
+        }
+        /* #lineprogress:after {
     content: '';
     display: block;
     background: orange;
@@ -769,59 +806,72 @@ li {
     height: 100%;
     border-radius: 9px;
 } */
-
-.imp_percentage {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  color: #43484b;
-  position: absolute;
-  top: -25px;
-  left: -15px;
-}
-
-.imp_scordcss {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  line-height: 17px;
-  color: #43484b;
-  padding: 0px;
-  margin: 0px;
-  position: absolute;
-  top: -75px;
-  min-width: 100px;
-  left: -33px;
-}
-
-.verbalText {
-  font-family: Gotham Rounded;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 24px;
-  /* or 202% */
-  color: #6e768a;
-}
-
-.zoom:hover {
-  -ms-transform: scale(1.5);
-  /* IE 9 */
-  -webkit-transform: scale(1.5);
-  /* Safari 3-8 */
-  transform: scale(1.5);
-}
-
-#progressline {
-  position: relative;
-  margin-bottom: 50px;
-}
-
-</style>
+        
+        .imp_percentage {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #43484b;
+            position: absolute;
+            top: -25px;
+            left: -15px;
+        }
+        
+        .imp_scordcss {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 17px;
+            color: #43484b;
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            top: -75px;
+            min-width: 100px;
+            left: -33px;
+        }
+        
+        .verbalText {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 12px;
+            line-height: 24px;
+            /* or 202% */
+            color: #6e768a;
+        }
+        
+        .zoom:hover {
+            -ms-transform: scale(1.5);
+            /* IE 9 */
+            -webkit-transform: scale(1.5);
+            /* Safari 3-8 */
+            transform: scale(1.5);
+        }
+        
+        #progressline {
+            position: relative;
+            margin-bottom: 50px;
+        }
+        
+        .table-bordered {
+            border: 25px solid #fff;
+        }
+        
+        .textCstm {
+            font-family: Gotham Rounded;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 12px !important;
+            line-height: 24px !important;
+            /* or 202% */
+            color: #6E768A;
+        }
+    </style>
 </head>
 
 <body onload="insertText()">
@@ -997,7 +1047,7 @@ li {
             </tbody>
         </table>
     </section>
-    
+
     <section>
         <table>
             <tbody>
@@ -1033,7 +1083,7 @@ li {
                                         How did Shruti perform in comparison to her peers?
                                     </h4>
                                 </div>
-                   
+
                                 <div class="peer-comp">
                                     <center class="peer-title">MAI research participants within age Group like John</center>
                                     <div class="row">
@@ -1074,186 +1124,181 @@ li {
         </table>
     </section>
     <section>
-        <table>
-            <tbody>
-                <tr>
-                    <div class="container container2">
-                        <div class="row">
-                            <div class="flex-container">
-                                <div class="circle-text">
-                                    <span>56</span>
-                                    <span class="circle-text-perc">%</span>
-                                </div>
-                                <h4 class="header-title">
-                                    How did we calculate your result?
-                                </h4>
-                            </div>
-                            <hr>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-6 statsdtlgrid2"><span>
-                                Shruti’s indicators that help her to concentrate on a task at hand without being distracted are developing at an average pace. This means that Shruti is able to manage 
-                            </span></div>
-                            <div class="col-sm-6 statsdtlgrid2"><span> fairly well and focus on the work she is doing, however, when the task becomes more and more difficult she is unable to complete the same.</span>
-                            </div>
-                        </div>
-                        <div class="row margin_zero">
-                            <div class="col-sm-6 ulboreder4 " style="width: 47%;">
-                                <div class="row margin_zero calculatecss">
-                                    <center><span class="liheaderspan">Cognitive Parameters</span></center>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #F22182;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <!-- <ul class="list-group">
-                                    <center><span class="liheaderspan">
-                                        <hl class="liheader">Cognitive Parameters</hl>
-                                    </span>
-
-                                    </center>
-                                    <li class="list-group-item4 ">Age relevant KSA’s</li>
-                                    <li class="list-group-item4">Third item</li>
-                                </ul> -->
-                            </div>
-                            <div class="col-sm-6 ulboreder4" style="float:right;width: 47%;">
-                                <div class="row margin_zero calculatecss">
-                                    <center><span class="liheaderspan">Cognitive Parameters</span></center>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #F22182;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <!-- <ul class="list-group">
-                                    <center><span class="liheaderspan">
-                                        <hl class="liheader">Cognitive Parameters</hl>
-                                    </span>
-
-                                    </center>
-                                    <li class="list-group-item4 ">Age relevant KSA’s</li>
-                                    <li class="list-group-item4">Third item</li>
-                                </ul> -->
-                            </div>
-                        </div>
-                        <div class="row margin_zero">
-                            <div class="col-sm-6 ulboreder4 " style="width: 47%;">
-                                <div class="row margin_zero calculatecss">
-                                    <center><span class="liheaderspan">Cognitive Parameters</span></center>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #F22182;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <!-- <ul class="list-group">
-                                    <center><span class="liheaderspan">
-                                        <hl class="liheader">Cognitive Parameters</hl>
-                                    </span>
-
-                                    </center>
-                                    <li class="list-group-item4 ">Age relevant KSA’s</li>
-                                    <li class="list-group-item4">Third item</li>
-                                </ul> -->
-                            </div>
-                            <div class="col-sm-6 ulboreder4" style="float:right;width: 47%;">
-                                <div class="row margin_zero calculatecss">
-                                    <center><span class="liheaderspan">Cognitive Parameters</span></center>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #F22182;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
-                                    <center><span class="spanage">Age relevant KSA’s</span>
-                                    </center>
-                                </div>
-
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
-                                </div>
-                                <!-- <ul class="list-group">
-                                    <center><span class="liheaderspan">
-                                        <hl class="liheader">Cognitive Parameters</hl>
-                                    </span>
-
-                                    </center>
-                                    <li class="list-group-item4 ">Age relevant KSA’s</li>
-                                    <li class="list-group-item4">Third item</li>
-                                </ul> -->
-                            </div>
-                        </div>
-                    </div>
-
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section>
-        <table>
-            <tbody>
-                <tr>
-                    <div class="container container2">
-                        <div class="row">
+        <div class="container-fluid paddond0 containercolor">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="4">
                             <div class="flex-container">
                                 <div class="circle-text">
                                     <span>56</span>
                                     <span class="circle-text-perc">%</span>
                                 </div>
                                 <span class="header-title">
-                                    How does Shruti Currently master Selective Attention?
-                                </span>
+                            How does Shruti Currently master Selective Attention?
+                        </span>
                             </div>
-            
-                            <hr>
-                        </div>
-                        <div class="row margin_zero">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="statsdtlgrid2 bordernone padding-left paddingrt10 textCstm">
+                            <span>
+                            Shruti’s indicators that help her to concentrate on a task at hand without being distracted are developing at an average pace. This means that Shruti is able to manage 
+                        </span>
+                        </td>
+                        <td colspan="2" class="statsdtlgrid2 bordernone padding-right paddinglt10 textCstm"><span>  Shruti’s indicators that help her to concentrate on a task at hand without being distracted are developing at an average pace. This means that Shruti is able to manage </span></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="bordernone">
+                            <div class=" ulboreder4 " style="">
+                                <div class="row margin_zero calculatecss">
+                                    <center><span class="liheaderspan">Cognitive Parameters</span></center>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #F22182;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <!-- <ul class="list-group">
+                                <center><span class="liheaderspan">
+                                    <hl class="liheader">Cognitive Parameters</hl>
+                                </span>
+
+                                </center>
+                                <li class="list-group-item4 ">Age relevant KSA’s</li>
+                                <li class="list-group-item4">Third item</li>
+                            </ul> -->
+                            </div>
+                        </td>
+                        <td colspan="2" class="bordernone">
+                            <div class=" ulboreder4 " style="">
+                                <div class="row margin_zero calculatecss">
+                                    <center><span class="liheaderspan">Behavioural Factors</span></center>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #F22182;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="bordernone">
+                            <div class=" ulboreder4 " style="">
+                                <div class="row margin_zero calculatecss">
+                                    <center><span class="liheaderspan">Cognitive Parameters</span></center>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #F22182;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <!-- <ul class="list-group">
+                              <center><span class="liheaderspan">
+                                  <hl class="liheader">Cognitive Parameters</hl>
+                              </span>
+
+                              </center>
+                              <li class="list-group-item4 ">Age relevant KSA’s</li>
+                              <li class="list-group-item4">Third item</li>
+                          </ul> -->
+                            </div>
+                        </td>
+                        <td colspan="2" class="bordernone">
+                            <div class=" ulboreder4 " style="">
+                                <div class="row margin_zero calculatecss">
+                                    <center><span class="liheaderspan">Behavioural Factors</span></center>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #F22182;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss" style="background: #389ACE;">
+                                    <center><span class="spanage">Age relevant KSA’s</span>
+                                    </center>
+                                </div>
+
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+                                <div class="row margin_zero calculatecss"><span class='activity_listing_blue'></span><span class='activity_li_text'>Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span>
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid paddond0 containercolor">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <div class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <span class="header-title">
+                                How does Shruti Currently master Selective Attention?
+                            </span>
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
                             <span class="madterselective5">Shruthi uses the following skills to master selective attention.</span>
                             <ul style="list-style-type: none; padding: 0; margin-left: 5px;">
                                 <li class="lisection5"><span class='bulletNums5'></span><span class="lisectionText5"> Verbal Memory</span>
@@ -1265,121 +1310,230 @@ li {
 
                                 </li>
                             </ul>
-                        </div>
-                        <div class="row margin_zero set_backgroung5"><br>
-                            <div class="col-sm-6 statsdtlgrid2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="paddond0 padding-left bordernone">
+                            <div class="row margin_zero set_backgroung5 padding-left">
                                 <div class="flex-container setimg5">
                                     <div class="circle_text55">
                                         <span> <img src="fight.png" / style="height: 36px;
-                                            width: 36px;"></span>
+                                    width: 36px;"></span>
                                     </div>
                                     <span class="header_title5">
-                                        Verbal Memory
-                                    </span>
+                                      Verbal Memory
+                                  </span>
                                 </div>
+                            </div>
+
+                        </td>
+                        <td colspan="2" class="paddond0 padding-right bordernone">
+                            <div class="row margin_zero set_backgroung5 padding-right">
+                                <div id="impactscorcard"></div>
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="statsdtlgrid2 paddond0 padding-left bordernone">
+                            <div class="row margin_zero margin_bottom20 set_backgroung5 padding-left padding-right">
+                                <span class="verbalText">
+                            Children with a good Verbal Memory are able to quickly grasp information and learn things faster. Since they now do not have to focus on the small procedures involved, they can devote their
+                            <span class="header_title5" style="margin-top: 20px; margin-bottom: 10px;">
+                                Shruthi’s score
+                            </span>
+
+                                <div id="progressline"></div>
+                                </span>
+                            </div>
+                        </td>
+                        <td colspan="2" class="statsdtlgrid2 paddond0 padding-right bordernone padding-right ">
+                            <div class="row margin_zero set_backgroung5 padding-left">
                                 <span class="verbalText">
                                 Children with a good Verbal Memory are able to quickly grasp information and learn things faster. Since they now do not have to focus on the small procedures involved, they can devote their
-                                <span class="header_title5" style="margin-top: 20px; margin-bottom: 10px;">
-                                    Shruthi’s score
-                                </span>
-                             
-                                <div id="progressline"></div> 
-                                </span class="verbalText">
+                              
+                                    </span><br><br><br><br><br>
                             </div>
-                            <div class="col-sm-6 statsdtlgrid2">
-                                <!-- <span class="lisectionText5"> Required level of Skill to be Proficient with Active Learning</span> -->
-                                <div id="impactscorcard"></div>
+                        </td>
 
-                                <span>and noises in the background. This makes it easier for them to focus on the task at hand.</span>
-                            </div>
-                        </div>
-                    </div>
-                </tr>
-            </tbody>
-        </table>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+        </div>
+        <!-- <table class="container2">
+          <thead>
+              <tr>
+                  <th>
+                      <div class="flex-container">
+                          <div class="circle-textpole">
+                              <img src="Icon_color.png">
+                          </div>
+                          <span class="header-title">
+                        Is John developing Age-Appropriate milestones to master Active Learning?
+                    </span>
+                      </div>
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                      <span class="divtext6">She Uses Verbal Memory, Ability to invent spellings and Sense of Fairness to Master the skill of Selective Attention</span>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <center class="milestone-ach"><img src="achieve.png">
+                          <span class="achievCss">Achieved</span>
+                      </center>
+                  </td>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td></td>
+                  </tr>
+              </tr>
+          </tbody>
+      </table> -->
     </section>
     <section>
-        <table>
-            <tbody>
-                <tr>
-                    <div class="container container2">
-                        <div class="row">
+        <div class="container-fluid paddond0 containercolor">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th colspan="4">
                             <div class="flex-container">
                                 <div class="circle-textpole">
                                     <img src="Icon_color.png">
                                 </div>
                                 <span class="header-title">
-                                    Is John developing Age-Appropriate milestones to master Active Learning?
-                                </span>
+                              Is John developing Age-Appropriate milestones to master Active Learning?
+                          </span>
                             </div>
-                            <hr>
-                        </div>
-                        <br>
-                        <div class="row margin_zero">
-                            <span class="divtext6">She Uses Verbal Memory, Ability to invent spellings and Sense of Fairness to Master the skill of Selective Attention</span>
-                        </div><br>
-                        <div class="row  margin_zero set_backgroung5">
-                            <div class="row margin_zero">
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4"> <span class="divtext6">She Uses Verbal Memory, Ability to invent spellings and Sense of Fairness to Master the skill of Selective Attention</span></td>
+                    </tr>
+                    <!-- </tbody>
+            </table>
+            <table class="table table-bordered">
+                <tbody> -->
+                    <tr>
+                        <td colspan="4" class="paddond0 padding-right padding-left bordernone">
+                            <div class="row margin_zero set_backgroung5">
                                 <center class="milestone-ach"><img src="achieve.png">
                                     <span class="achievCss">Achieved</span>
                                 </center>
                             </div>
-                            <hr>
-                            <div class="row margin_zero ">
-                                <div class="col-sm-6 margin_zero">
-                                    <div class="flex-container setimg5">
-                                        <div class="circle_text55">
-                                            <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="paddond0 padding-left bordernone">
+                            <div class="row margin_zero set_backgroung5">
+                                <div class="flex-container setimg5">
+                                    <div class="circle_text55">
+                                        <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
 
-                                        </div>
-                                        <span class="achieved_title1">
-                                        Ability to allocate a set amount of time for doing a task
-                                    </span>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 statsdtlgrid2">
-                                    <div class="flex-container setimg5">
-                                        <div class="circle_text55">
-                                            <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
-
-                                        </div>
-                                        <span class="achieved_title2">
-                                        Ability to allocate a set amount of time for doing a task
-                                    </span>
-                                    </div>
+                                    <span class="achieved_title1">
+                          Ability to allocate a set amount of time for doing a task
+                      </span>
                                 </div>
                             </div>
-                            <hr>
-                            <div class="row margin_zero ">
-                                <div class="col-sm-6 statsdtlgrid2">
-                                    <div class="flex-container setimg5">
-                                        <div class="circle_text55">
-                                            <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
+                        </td>
+                        <td colspan="2" class="paddond0 padding-right bordernone">
+                            <div class="row margin_zero set_backgroung5">
+                                <div class="flex-container setimg5">
+                                    <div class="circle_text55">
+                                        <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
 
-                                        </div>
-                                        <span class="achieved_title1">
-                                        Ability to allocate a set amount of time for doing a task
-                                    </span>
                                     </div>
-                                </div>
-                                <div class="col-sm-6 statsdtlgrid2">
-                                    <div class="flex-container setimg5">
-                                        <div class="circle_text55">
-                                            <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
-
-                                        </div>
-                                        <span class="achieved_title2">
-                                        Ability to allocate a set amount of time for doing a task
-                                    </span>
-                                    </div>
+                                    <span class="achieved_title1">
+                        Ability to allocate a set amount of time for doing a task
+                    </span>
                                 </div>
                             </div>
-                        </div><br><br>
-                    </div>
-                    </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="paddond0 padding-left bordernone padding-btm">
+                            <div class="row margin_zero set_backgroung5">
+                                <div class="flex-container setimg5">
+                                    <div class="circle_text55">
+                                        <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
+
+                                    </div>
+                                    <span class="achieved_title1">
+                        Ability to allocate a set amount of time for doing a task
+                    </span>
+                                </div>
+                            </div>
+                        </td>
+                        <td colspan="2" class="paddond0 padding-right bordernone padding-btm">
+                            <div class="row margin_zero set_backgroung5">
+                                <div class="flex-container setimg5">
+                                    <div class="circle_text55">
+                                        <span> <img src="fight.png" / style="transform: scale(0.5)"></span>
+
+                                    </div>
+                                    <span class="achieved_title1">
+                      Ability to allocate a set amount of time for doing a task
+                  </span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- <table class="container2">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="flex-container">
+                            <div class="circle-textpole">
+                                <img src="Icon_color.png">
+                            </div>
+                            <span class="header-title">
+                          Is John developing Age-Appropriate milestones to master Active Learning?
+                      </span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="divtext6">She Uses Verbal Memory, Ability to invent spellings and Sense of Fairness to Master the skill of Selective Attention</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center class="milestone-ach"><img src="achieve.png">
+                            <span class="achievCss">Achieved</span>
+                        </center>
+                    </td>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tr>
             </tbody>
-        </table>
+        </table> -->
     </section>
     <section>
         <table>
@@ -1405,81 +1559,64 @@ li {
                         </div>
                         <div style="background: #fff;">
                             <div class="background-layout" style="margin: 20px">
-        <div
-          style="background: rgba(255, 248, 232, 0.5); border-radius: 30px; padding: 16px; padding-right: 36px;">
-          <h4>
-            name
-          </h4>
-          <div style="display: flex; align-items: center;">
-            <div style="display: flex; align-items: center;">
-              <h4>
-                56
-              </h4>
-              <img
-              src="HighIcon.png"
-            alt="h"
-              />
-            </div>
-            <div
-              style="width: 100%; margin-left: 5px; position: relative;"
-            >
-              <div
-                style="position: absolute; top: -48px; z-index: 1; left: 54%; margin-left: -7px; margin-bottom: 8px;"
-              >
-                <h4
-                  style="
+                                <div style="background: rgba(255, 248, 232, 0.5); border-radius: 30px; padding: 16px; padding-right: 36px;">
+                                    <h4>
+                                        name
+                                    </h4>
+                                    <div style="display: flex; align-items: center;">
+                                        <div style="display: flex; align-items: center;">
+                                            <h4>
+                                                56
+                                            </h4>
+                                            <img src="selective.png" alt="h" />
+                                        </div>
+                                        <div style="width: 100%; margin-left: 5px; position: relative;">
+                                            <div style="position: absolute; top: -48px; z-index: 1; left: 54%; margin-left: -7px; margin-bottom: 8px;">
+                                                <h4 style="
                     position: absolute;
                     left: 40px;
                     bottom: 15px;
-                    color: blue "
-                >
-                  56%
-                </h4>
+                    color: blue ">
+                                                    56%
+                                                </h4>
 
-                <div style="display: flex; flex-direction: column;">
-                  <img
-                  src="Circle.png"
+                                                <div style="display: flex; flex-direction: column;">
+                                                    <img src="selective.png" />
+                                                    <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M3.5 0.571289L6.53109 5.82129H0.468911L3.5 0.571289Z"
+                      fill="yellow"
+                    />
+                  </svg>
+                                                </div>
+                                            </div>
+                                            <div style="position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; height: 6px; z-index: 1;">
+                                                <div style="position: absolute; background: #27c6a3; width: 47%; height: 6px;"></div>
+                                                <div style="position: absolute; background: #389ACE; width: 100%; height: 6px;"></div>
+                                            </div>
+                                            <div style="position: absolute; top: 3px; left: 30px;z-index: 1;">
+                                                <svg width="7" height="6" viewBox="0 0 7 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.5 5.57129L0.468911 0.321289L6.53109 0.321289L3.5 5.57129Z"
+                    fill="black"
                   />
-                  <svg width="5" height="5" viewBox="0 0 5 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.71425 0.941406L4.8306 4.60702H0.597907L2.71425 0.941406Z" fill="#4C84FF"/>
-                    </svg>
-                    
-                  
-                </div>
-              </div>
-              <div
-                style="position: relative; display: flex; flex-direction: column; align-items: center; width: 100%; height: 6px; z-index: 1;">
-                <div
-                style="position: absolute; background: #27c6a3; width: 47%; height: 6px;"    
-                ></div>
-                <div
-                style="position: absolute; background: #389ACE; width: 100%; height: 6px;"    
-                ></div>
-              </div>
-              <div
-              style="position: absolute; top: 3px; left: 30px;z-index: 1;">
-              <svg width="5" height="4" viewBox="0 0 5 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.77891 3.79297L0.662569 0.127354L4.89526 0.127354L2.77891 3.79297Z" fill="#98E240"/>
                 </svg>
-                
-                <div style="display: flex; ">
-                    <img style="width: 28.64px" src="Circle.png"/>                
-                  <h4>
-                    56%
-                  </h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-          style="display: flex; justify-content: space-between; margin-top: 36px; margin-left: 108px;"
-          >
-          <p>20</p>
-          <p>40</p>
-          <p>60</p>
-          <p>80</p>
-          <p>100</p>
-            <!-- {[20, 40, 60, 80, 100].map((item, i) => {
+                                                <div style="display: flex; ">
+                                                    <img style="width: 28.64px" src="selective.png" />
+                                                    <h4>
+                                                        56%
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between; margin-top: 36px; margin-left: 108px;">
+                                        <p>20</p>
+                                        <p>40</p>
+                                        <p>60</p>
+                                        <p>80</p>
+                                        <p>100</p>
+                                        <!-- {[20, 40, 60, 80, 100].map((item, i) => {
               return (
                 <div
                   key={i}
@@ -1509,9 +1646,9 @@ li {
                 </div>
               );
             })} -->
-          </div>
-        </div>
-      </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -1523,16 +1660,16 @@ li {
     <section>
         <div style="border: solid 20px #fff;  background: #f1f1f1; margin-top: 20px; width: 595px; margin-bottom: 15px; margin-right: auto;
         margin-left: auto;">
-        <table style="padding: 15px; width: 100%; background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+            <table style="padding: 15px; width: 100%; background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
         border: 1px solid rgba(118, 54, 221, 0.15); ">
-        <tr>
-            <td>
-                <div style="background: rgba(255, 248, 232, 0.5); width: 50%;height: 136.88px;">
-            </div>
-        </td>
-          </tr>
-        </table>
-    </div>
+                <tr>
+                    <td>
+                        <div style="background: rgba(255, 248, 232, 0.5); width: 50%;height: 136.88px;">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </section>
 
 </body>
@@ -1559,10 +1696,10 @@ li {
                 padding: 0,
                 margin: 0,
                 transform: null,
-                fontSize:'12px',
-                fontWeight:600,
-                left:'80%',
-                color:"#43484B",
+                fontSize: '12px',
+                fontWeight: 600,
+                left: '80%',
+                color: "#43484B",
 
             },
             autoStyleContainer: false
@@ -1618,7 +1755,6 @@ li {
     // ----------------progress impact scord -------------
     var bar = new ProgressBar.SemiCircle(scorcard, {
         strokeWidth: 5,
-        strokeLineCap: "round",
         color: '#7636DD',
         trailColor: '#eee',
         trailWidth: 5,
@@ -1664,14 +1800,13 @@ li {
             labels: ["Cognition", "Emotional", "Communication", "social", "Cognition"],
 
             datasets: [{
-                    data: [66.6, 23.4, 10],
-                    label: 'Total ',
-                    backgroundColor: ["#6E4CB2", "#AA92DB", "#D5CBEA"],
-                    borderWidth: 0,
-                    fillColor: "#48A497",
-                    strokeColor: "#48A4D1",
-                }
-            ]
+                data: [66.6, 23.4, 10],
+                label: 'Total ',
+                backgroundColor: ["#6E4CB2", "#AA92DB", "#D5CBEA"],
+                borderWidth: 0,
+                fillColor: "#48A497",
+                strokeColor: "#48A4D1",
+            }]
         },
         // Configuration options go here
         options: {
@@ -1704,7 +1839,7 @@ li {
             }
         }
     });
-    
+
 
     function insertText() {
         var val = 76;

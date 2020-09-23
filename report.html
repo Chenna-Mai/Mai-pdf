@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PDF Designs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./report.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js" integrity="sha256-qSIshlknROr4J8GMHRlW3fGKrPki733tLq+qeMCR05Q=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <!-- <script src="https://www.chartjs.org/dist/master/Chart.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
+    <!-- progres bar -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="insertText()">
+    <!-- ----------------------------PAGE 1--------------------- -->
+    <section>
+        <div class="container containercls">
+            <table cellpadding="0" cellspacing="0" style="margin:0 auto; width: 100%;">
+                <tr>
+                    <td colspan="12">
+                        <center>
+                            <div class="row headerdiv">
+                                <span class="headerclss">Selective Attention Report</span>
+                                <p class="headertext">Lorem Ipsum is simply dummy text of the printing and types</p>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td colspan="5" class="paddond0 padding-right padding-left bordernone" style="width:40%">
+
+                        <center> <span class="overall">Overall Scorecard</span></center>
+                        <div id="scorcard"></div>
+
+                    </td>
+
+                    <td colspan="7" class="paddond0 padding-right  bordernone"
+                        style="width:60%">
+                        <table style="width:90%">
+                            <thead>
+                                <tr>
+                                    <th colspan="12">
+                                        <span class="statscss">Stats</span>
+                                        <p class="seatText">Lorem ipsum dolor sit amet, consectetur adipi</p>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <!-- <div class= "col-sm-7 " style="border-left: 1px solid rgba(0, 0, 0, 0.05);"> -->
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">52</span>
+                                        <span class="statsdtlcss">Questions Answered</span>
+                                        <!-- </div> -->
+                                    </td>
+
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">212k</span>
+                                        <span class="statsdtlcss">Decision
+                                            Points</span>
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">16K</span>
+                                        <span class="statsdtlcss">Indicators 
+                                            Computed </span>
+                                        <!-- </div> -->
+                                    </td>
+
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">182</span>
+                                        <span class="statsdtlcss">Parameters Tested</span>
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width:100%">
+                <tr>
+                    <td><br><br>
+                        <hr>
+                        <center>
+                            <div class="row Theaderdiv">
+                                <span class="Theaderclss">Table of Contents</span>
+                            </div>
+                        </center><br>
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-sm-6">
+                                <ul class="li_sction1" style="list-style-type: none;">
+                                    <li><span class='bulletNums'>1</span> Overall Scoreboard
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>2</span> Selective Attention scores
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>3</span> How did we calculate your result?
+                                        <hr>
+                                    </li>
+                                    <li><span><span class='bulletNums'>4</span></span> <span class="Theaderli">How did
+                                            Shruti fair in the Selective Attention Scoreboard?</span>
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>5</span>How does Shruti Currently master Selective
+                                        Attention?
+                                        <hr>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="li_sction1" style="list-style-type: none;">
+                                    <li><span class='bulletNums'>7</span> Focus
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>8</span> Areas of Focus
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>9</span> Milestone Development
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>10</span> Milestone Development
+                                        <hr>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 2--------------------- -->
+
+    <section>
+        <div class="container container2">
+            <table style="margin:30px auto; width:100%">
+                <thead>
+                    <tr>
+                        <td colspan="12">
+                            <div class="headerdiv2">
+                                <img src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/selective.png" style="width:58px;height:58px;border-radius: 50%;" />
+                                <span class="headerclss2">Selective Attention</span>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  colspan="6" class="width50">
+                            <!-- if paragraph length is greater than 250 characters use column-count: 2 else 1 -->
+                            <div style="column-count: 2;" class="statsdtlgrid2">It is the ability to concentrate on a task over But in most cases, we don’t have to pay attention to each
+  and every one of them. And this is where Selective Attention is used, to focus on
+  what is important and tune out other background information.
+                            </div>
+                        </td>
+                        <!-- <td colspan="6" class="width50">
+                            <div class=" statsdtlgrid2"><span>But in most cases, we don’t have to pay attention to each
+                                    and every one of them. And this is where Selective Attention is used, to focus on
+                                    what is important and tune out other background information.</span></div>
+                        </td> -->
+                    </tr>
+                </tbody>
+            </table>
+            <table style="margin:30px auto; width:100%">
+                <tr>
+                    <td style="background: #ffff; border: 1px solid rgba(118, 54, 221, 0.15);">
+                        <div style="background: #ffff; margin-right: 17px;margin-left: 17px;">
+                            <div class="col-sm-6" style="width: auto; height: 200px;">
+                                <center>
+                                    <span style="display: inline-block; margin-top: 27px; margin-bottom: 15px;"
+                                        class="doughnutcss">Active Listenting domain composition</span>
+                                </center>
+                                <div style="display: flex; justify-content: center; width: 100%;">
+                                    <div style="width: 200px; height: 200px;">
+                                        <canvas id="myChart" style=""></canvas>
+                                    </div>
+                                    <div id="doughnut-list" class="doughnut-list">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table style="margin:30px auto; width:100%;">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="slective_action2">
+                                <span class="selectiveText">At the age of 6 years, Selective Attention is influenced by
+                                    68% of cognitive elements, 20% of behavioural Parameters and 12% of physical
+                                    indicators.
+
+                                    You can look at Shruti’s score in these parameters in the Selective Attention
+                                    Scoreboard.</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 3--------------------- -->
+
+    <section>
+        <div class="container container2">
+
+            <!-- <table style="margin:20px auto">
+                <thead>
+                    <tr>
+                        <td colspan="12">
+                            <div class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <h4 class="header-title">
+                                    What is Shruti’s Selective Attention scores?
+                                </h4>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="6">
+                            <div class="statsdtlgrid2"><span>
+                                    Shruti’s indicators that help her to concentrate on a task at hand without being
+                                    distracted are developing at an average pace. This means that Shruti is able to
+                                    manage
+                                </span></div>
+                        </td>
+                        <td colspan="6">
+                            <div class="statsdtlgrid2"><span> fairly well and focus on the work she is doing, however,
+                                    when the task becomes more and more difficult she is unable to complete the
+                                    same.</span></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr /> -->
+
+            <table style="margin:20px auto">
+                <thead>
+                    <tr>
+                        <td>
+                            <div class="flex-container">
+                                <div class="circle-text"
+                                    style="background-color: #27c6a3 ;padding-right: 12px; min-width: 70; min-height: 70px;">
+                                    <img src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/Polygon.png"
+                                        style="position: relative; left: 30px; bottom: 24px;">
+                                    <span style="margin-top: 7px;">56</span>
+                                    <span class="circle-text-perc" style="margin-top: 13px;">%</span>
+                                </div>
+                                <h4 class="header-title">
+                                    How did Shruti perform in comparison to her peers?
+                                </h4>
+                            </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="peer-comp">
+                                <table style="margin:20px auto">
+                                    <thead>
+                                        <tr>
+                                            <td colspan="12">
+                                                <center class="peer-title">MAI research participants within age Group
+                                                    like John</center>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="6" class="peerdiv1">
+                                                <div class="flex-container" style="margin:0;">
+                                                    <div id="peer-icon" className="group-icons">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td colspan="6" class="peerdiv2">
+                                                <div class="pace-detail">
+                                                    <span class="pace_dtl">76%</span>
+                                                    <p class="stats_peer">Of chidren achieve above average pace of
+                                                        active learning</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr style="margin-top: 28px; margin-bottom: 20px;">
+                                            <td colspan="6" class="peerdiv1">
+                                                <div class="flex-container" style="margin:0">
+                                                    <div id="peer-iconR" className="group-icons">
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td colspan="6" class="peerdiv2">
+                                                <div class="pace-detail" style="margin:16% 0px">
+                                                    <span class="pace_dtlR">34%</span>
+                                                    <p class="stats_peer">Of chidren achieve above average pace of
+                                                        active learning</p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 4--------------------- -->
+
+    <section>
+        <div class="container container2">
+            <table style="margin:10px auto">
+                <tbody>
+                    <tr>
+                        <td colspan="12">
+                            <div class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <h4 class="header-title">
+                                    How did we calculate your result?
+                                </h4>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="statsdtlgrid2 bordernone  textCstm">
+                            <span>
+                                Shruti’s indicators that help her to concentrate on a task at hand without being
+                                distracted are developing at an average pace. This means that Shruti is able to manage
+                            </span>
+                        </td>
+                        <td colspan="6" class="statsdtlgrid2 bordernone textCstm"><span> Shruti’s indicators that help
+                                her to concentrate on a task at hand without being distracted are developing at an
+                                average pace. This means that Shruti is able to manage </span></td>
+                    </tr>
+                    </thead>
+                </tbody>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div id="calculate-tables" style="display: flex; flex-wrap: wrap;">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 5--------------------- -->
+
+    <section>
+        <div class="container container2">
+
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="12">
+                            <div class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <span class="header-title">
+                                    How does Shruti Currently master Selective Attention?
+                                </span>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <span class="madterselective5">Shruthi uses the following skills to master selective
+                                attention.</span>
+                            <ul id="mileList" style="list-style-type: none; padding: 0; margin-left: 5px;">
+                                <!-- <li class="lisection5"><span class='bulletNums5'></span><span class="lisectionText5">
+                                        Verbal Memory</span>
+
+                                </li>
+                                <li class="lisection5"><span class='bulletNums5'></span><span class="lisectionText5">
+                                        Ability to invent spellings</span>
+                                </li>
+                                <li class="lisection5"><span class='bulletNums5'></span><span class="lisectionText5">
+                                        Sense of fairness</span>
+
+                                </li> -->
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table style="margin:20px auto">
+                <tbody id="ksa-achieved" class="set_backgroung5">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 6--------------------- -->
+
+    <section>
+        <div class="container container2">
+            <table class="full-width" style="margin:10px 0px">
+                <thead>
+                    <tr>
+                        <td colspan="4">
+                            <div class="flex-container">
+                                <div class="circle-textpole">
+                                    <img
+                                        src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/Icon_color.png">
+                                </div>
+                                <span class="header-title">
+                                    Is John developing Age-Appropriate milestones to master Active Learning?
+                                </span>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4"> <span class="divtext6">She Uses Verbal Memory, Ability to invent spellings and
+                                Sense of Fairness to Master the skill of Selective Attention</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="full-width"style="margin:20px 0px">
+                <thead>
+                    <tr style="border-bottom: 0.1px solid rgb(0,0,0,0.03);">
+                        <td colspan="6">
+                            <div class="row margin_zero set_backgroung5">
+                                <center class="milestone-ach">
+                                    <img
+                                        src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/achieve.png" style="width:48px;height:48px"/>
+                                    <span class="achievCss">Achieved</span>
+                                </center>
+                            </div>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>
+                            <div id="milestone-list" class="set_backgroung5"
+                            style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                        </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 7--------------------- -->
+
+    <section>
+        <div class="container container2" style="padding :0 17px 0 17px">
+            <table class="full-width" style="margin:10px 0px">
+                <thead>
+                    <tr>
+                        <td>
+                            <div class="flex-container">
+                                <div class="circle-textpole">
+                                    <img
+                                        src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/Icon_color.png">
+                                </div>
+                                <h4 class="header-title">
+                                    Daily Behaviours that are helping Shruti to master the skill of active learning
+                                </h4>
+                            </div>
+                            <hr>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="divtext6">These are daily observable Behaviours that help you to excel in a
+                                particular skill.
+                                These are often learnt by copying others or on trial and error basis as they grow. They
+                                are moistly
+                                developed by experience and exposure. These micro behaviours can help us in
+                                understanding how a child is
+                                learning and practicing the skill on a daily basis. These behaviours become a habit over
+                                a period of
+                                time and hold the key to transforming the child at any given point. This section of the
+                                report helps you
+                                to understand how John is cultivating a micro habit to master the skill.</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table class="full-width">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div id="behavioral-content" class="row margin_zero"
+                                style="display: flex; flex-wrap: wrap; background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                                    border: 1px solid rgba(118, 54, 221, 0.15); margin-top: 20px; margin-bottom: 20px; padding: 7.5px;">
+                 
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- ----------------------------PAGE 8 MILESTONE--------------------- -->
+
+    <section>
+        <div class="container containercls">
+            <table cellpadding="0" cellspacing="0" style="margin:0 auto; width: 100%;">
+                <tr>
+                    <td colspan="12">
+                        <center>
+                            <div class="row headerdiv">
+                                <span class="headerclss">Selective Attention Report</span>
+                                <p class="headertext">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry.</p>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td colspan="5" class="paddond0 padding-right padding-left bordernone">
+
+                        <center> <span class="overall" style="margin-bottom:0px;">Milestone Status</span>
+                            <!-- <div id="scorcard"></div> -->
+                            <div>
+                                <h2 style="font-family: Gotham Rounded;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 29px;
+                            text-align: center;
+                            
+                            color: #98E240;">Pending</h2>
+                                <img style="width: 60px;
+                            height: 60px;
+                            margin-top: 15px;
+                            margin-bottom: 20px;"
+                                    src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/selective.png"
+                                    alt="Image" />
+                                <h4 style="font-family: Gotham Rounded;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 19px;
+                            margin:0;
+                            text-align: center;
+                            
+                            color: #43484B;">Sumo yet to develop something</h4>
+                            </div>
+                        </center>
+                    </td>
+
+                    <td colspan="7" class="paddond0 padding-right  bordernone"
+                        style="border-left: 1px solid rgba(0, 0, 0, 0.05);">
+                        <table style="">
+                            <thead>
+                                <tr>
+                                    <th colspan="12">
+                                        <span class="statscss">Stats</span>
+                                        <p class="seatText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                            do eiusmod tempor incididunt.</p>
+                                    </th>
+                                </tr>
+
+                            </thead>
+                            <!-- <div class= "col-sm-7 " style="border-left: 1px solid rgba(0, 0, 0, 0.05);"> -->
+                            <tbody>
+                                <tr>
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">52</span>
+                                        <span class="statsdtlcss">Questions <br> Answered</span>
+                                        <!-- </div> -->
+                                    </td>
+
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">212k</span>
+                                        <span class="statsdtlcss">Decision <br>
+                                            Points</span>
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">16K</span>
+                                        <span class="statsdtlcss">Indicators<br> Computed </span>
+                                        <!-- </div> -->
+                                    </td>
+
+                                    <td colspan="6" class="colgrid">
+                                        <!-- <div class="col-sm-6 colgrid"> -->
+                                        <span class="statsgride">182</span>
+                                        <span class="statsdtlcss">Parameters<br>Tested</span>
+                                        <!-- </div> -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    </td>
+                </tr>
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width:100%">
+                <tr>
+                    <td><br><br>
+                        <hr>
+                        <center>
+                            <div class="row Theaderdiv">
+                                <span class="Theaderclss">Table of Contents</span>
+                            </div>
+                        </center><br>
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-sm-6">
+                                <ul class="li_sction1" style="list-style-type: none;">
+                                    <li><span class='bulletNums'>1</span> Overall Scoreboard
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>2</span> Selective Attention scores
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>3</span> How did we calculate your result?
+                                        <hr>
+                                    </li>
+                                    <li><span><span class='bulletNums'>4</span></span> <span class="Theaderli">How did
+                                            Shruti fair in the Selective Attention Scoreboard?</span>
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>5</span>How does Shruti Currently master Selective
+                                        Attention?
+                                        <hr>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="li_sction1" style="list-style-type: none;">
+                                    <li><span class='bulletNums'>7</span> Focus
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>8</span> Areas of Focus
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>9</span> Milestone Development
+                                        <hr>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 9 Learinng style--------------------- -->
+
+    <section>
+        <div class="container containercls">
+            <table cellpadding="0" class="full-width" cellspacing="0" style="margin:0 auto; width: 100%;">
+                <tr>
+                    <td colspan="12">
+                        <center>
+                            <div class="row headerdiv">
+                                <span class="headerclss">Selective Attention Report</span>
+                                <p class="headertext">Learning styles refer to the techniques used by Bittu to understand and learn new information. Every child has a preferred way of learning.
+                                    While some are able to learn faster with the use of pictures or graphs, some others prefer reading out loud or studying in a group. Knowing
+                                    about Bittu's learning styles can help you to identify and choose methods that are best suited for him. This way you can make his learning
+                                    process faster and more efficient.</p>
+                            </div>
+                        </center>
+                    </td>
+                </tr>
+
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width: 100%;">
+                <tr>
+                    <td colspan="" class="paddond0 padding-right padding-left bordernone">
+
+                        <center> <span class="overall" style="margin-bottom:0px; font-weight:600 ;line-height:34px">Most
+                                preffered Learining Style</span>
+                            <!-- <div id="scorcard"></div> -->
+                            <div>
+
+                                <img style="width: 60px;
+                            height: 60px;
+                            margin-top: 15px;
+                            " src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/selective.png"
+                                    alt="Image" />
+                                <h2 style="font-family: Gotham Rounded;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 24px;
+                                line-height: 29px;
+                                text-align: center;
+                                
+                                color: #98E240;">Logcal-Mathmatical</h2>
+                            </div>
+                        </center>
+                    </td>
+
+
+
+                </tr>
+            </table>
+
+            <table cellpadding="0" cellspacing="0" style="width:100%">
+                <tr>
+                    <td><br>
+                        <hr>
+                        <center>
+                            <div class="row Theaderdiv">
+                                <span class="Theaderclss">Table of Contents</span>
+                            </div>
+                        </center><br>
+                        <div class="row" style="margin-bottom: 30px;">
+                            <div class="col-sm-6">
+                                <ul class="li_sction1" style="list-style-type: none;">
+                                    <li><span class='bulletNums'>1</span> Overall Scoreboard
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>2</span> Selective Attention scores
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>3</span> How did we calculate your result?
+                                        <hr>
+                                    </li>
+                                    <li><span><span class='bulletNums'>4</span></span> <span class="Theaderli">How did
+                                            Shruti fair in the Selective Attention Scoreboard?</span>
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>5</span>How does Shruti Currently master Selective
+                                        Attention?
+                                        <hr>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="li_sction1" style="list-style-type: none;">
+                                    <li><span class='bulletNums'>7</span> Focus
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>8</span> Areas of Focus
+                                        <hr>
+                                    </li>
+                                    <li><span class='bulletNums'>9</span> Milestone Development
+                                        <hr>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 10 Learinng style 2--------------------- -->
+
+
+    <section>
+        <div class="container container2" style="padding: 0;">
+            <table class="full-width" style="margin:10px auto;width: 100%;">
+                <tbody>
+                    <tr>
+                        <td colspan="12">
+                            <div style="margin-left: 20px;" class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <h4 class="header-title">
+                                    How did we calculate your result?
+                                </h4>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="padding-left: 20px;" class="statsdtlgrid2 bordernone  textCstm">
+                            <span>
+                                Shruti’s indicators that help her to concentrate on a task at hand without being
+                                distracted are developing at an average pace. This means that Shruti is able to manage
+                            </span>
+
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="12">
+                            <div style="margin-left: 20px;" class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <h4 class="header-title">
+                                    How did we calculate your result?
+                                </h4>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6"  style="padding-left: 20px;"  class="statsdtlgrid2 bordernone  textCstm">
+                            
+                                Shruti’s indicators that help her to concentrate on a task at hand without being
+                                distracted are developing at an average pace. This means that Shruti is able to manage
+                            
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div id="learning-tables" style="display: flex; flex-wrap: wrap;">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+    </section>
+
+    <!-- ----------------------------PAGE 10 Learinng style 2--------------------- -->
+
+
+    <section>
+        <div class="container container2">
+            <table style="margin:10px auto; width: 100%;">
+                <tbody>
+                    <tr>
+                        <td colspan="12">
+                            <div class="flex-container">
+                                <div class="circle-text">
+                                    <span>56</span>
+                                    <span class="circle-text-perc">%</span>
+                                </div>
+                                <h4 class="header-title">
+                                    How did we calculate your result?
+                                </h4>
+                            </div>
+                            <hr />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="padding: 0;" class="statsdtlgrid2 bordernone  textCstm">
+                            <span>
+                                Shruti’s indicators that help her to concentrate on a task at hand without being
+                                distracted are developing at an average pace. This means that Shruti is able to manage
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="width: 100%;">
+                <tr>
+                    <td>
+                        <div id="learning-methods" style="background: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                        border: 1px solid rgba(118, 54, 221, 0.15); margin: 10px 0 20px; width: 100%;">
+                            
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </div>
+    </section>
+
+    <script type="text/javascript" src="./report.js"></script>
+</body>
+
+<!-- <script src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/report.js"></script> -->
+
+</html>

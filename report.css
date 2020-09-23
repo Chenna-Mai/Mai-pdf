@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url("./fonts/Gotham Rounded/GothamRnd-Bold.otf");
+  src: url("./fonts/Gotham Rounded/GothamRnd-Medium.otf");
   font-weight: 500;
 }
 
@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url("./fonts/Gotham Rounded/GothamRnd-Medium.otf");
-  font-weight: 500;
+  src: url("./fonts/Gotham Rounded/GothamRnd-Bold.otf");
+  font-weight: 700;
 }
 
 * {
@@ -28,7 +28,7 @@
 body,
 html {
   font-family: "Gotham Rounded";
-  background: #e5e5e5;
+  background: #ffffff;
 }
 
 .margin_zero {
@@ -78,9 +78,10 @@ html {
 .li_sction1 li {
   margin: 0;
 }
+
 .headertext {
-  position: relative;
-  top: 40px;
+  margin-top: 45px;
+  margin-bottom: 20px;
   font-family: Gotham Rounded;
   font-style: normal;
   font-weight: 100;
@@ -89,24 +90,26 @@ html {
   line-height: 19px;
   text-align: center;
   color: #ffffff;
+  width: 70%;
 }
 
 .headerdiv {
-  width: 555px;
+  /* width: 555px; */
   height: 147px;
   left: 20px;
   top: 24px;
   background: #7636dd;
-  margin-top: 20px;
-  padding: 0px 45px 0 45px;
+  margin: 20px 0;
+  /* padding: 0px 45px 0 45px; */
 }
 
 .Theaderdiv {
-  width: 540px;
+  /* width: 540px; */
   height: 48px;
   left: 28px;
   top: 439px;
   background: #7636dd;
+  margin: 20px 0;
 }
 
 .statscss {
@@ -131,8 +134,7 @@ html {
 }
 
 .overall {
-  margin: 5px 0px;
-  display: inline-block;
+  display: block;
   font-family: Gotham Rounded;
   font-style: normal;
   font-weight: 500;
@@ -140,7 +142,7 @@ html {
   line-height: 22px;
   text-align: center;
   color: #43484b;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
 }
 
 .statsgride {
@@ -178,12 +180,11 @@ html {
 .colgrid {
   padding: 0px 11px 0px 11px;
   background: rgba(118, 54, 221, 0.8);
-  width: 123.5px;
+  width: 50%;
   height: 62.5px;
+  vertical-align: text-top;
   /* border: 0.5px solid rgba(0, 0, 0, 0.1); */
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: flex-start;
 }
 
 .bulletNums {
@@ -203,6 +204,7 @@ html {
 .bulletlist {
   border-bottom: 1px solid black;
 }
+
 hr {
   margin-top: 0px;
   margin-bottom: 15px;
@@ -224,7 +226,6 @@ li {
   margin-bottom: 15px;
   /* width: 595px; */
   background: #ffffff;
-  margin-top: 20px;
   padding: 0 20px 0 20px;
 }
 
@@ -232,15 +233,20 @@ li {
 
 .container2 {
   border: solid 25px #fff;
-  background: #f1f1f1;
+  background: rgba(118, 54, 221, 0.05);
   margin-top: 20px;
   padding: 0 20px 0 20px;
+  height: 842px;
   /* width: 595px; */
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
+}
+
+.containercolor {
+  background: #f1f1f1;
 }
 
 .headerdiv2 {
-  margin-bottom: 15px;
+  margin: 25px 10px 10px;
 }
 
 .headerclss2 {
@@ -251,6 +257,7 @@ li {
   line-height: 22px;
   /* identical to box height, or 124% */
   color: #43484b;
+  margin-left: 10px;
 }
 
 .active_list {
@@ -266,8 +273,9 @@ li {
   font-size: 14px;
   line-height: 25px;
   /* or 180% */
+  white-space: pre-line;
   color: #6e768a;
-  padding: 3px 8px 8px 20px;
+  /* padding: 3px 8px 8px 20px; */
 }
 
 .slective_action2 {
@@ -284,14 +292,15 @@ li {
   line-height: 22px;
   /* or 160% */
   color: #43484b;
+  white-space: pre-line;
 }
 
 .circle-textpole {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 102px;
-  height: 65px;
+  min-width: 70px;
+  height: 70px;
   background: #683bb8;
   border-radius: 100px;
   font-family: Gotham Rounded;
@@ -324,7 +333,7 @@ li {
   display: flex;
   align-items: center;
   margin-top: 25px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-bottom: 10px;
 }
 
@@ -351,7 +360,7 @@ li {
   line-height: 20px;
   text-align: center;
   color: #43484b;
-  margin: 25px 102px 25px 102px;
+  margin: 25px 102px 40px 102px;
 }
 
 .peer-comp {
@@ -359,6 +368,7 @@ li {
   margin-top: 20px;
   background: linear-gradient(0deg, #ffffff, #ffffff);
   border: 1px solid rgba(118, 54, 221, 0.15);
+  height: 390px;
 }
 
 .peer-icon {
@@ -371,14 +381,18 @@ li {
 .peerdiv1 {
   width: 50%;
   padding: 0;
-  padding-left: 100px;
+  padding-left: 17%;
 }
 
 .peerdiv2 {
   width: 50%;
   padding: 0;
-  padding-left: 16px;
-  padding-right: 100px;
+  padding-left: 25px;
+  padding-right: 17%;
+}
+
+.margin_bottom20 {
+  margin-bottom: 20px;
 }
 
 .stats_peer {
@@ -427,12 +441,20 @@ li {
   /* margin: 15px; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+.tablecalculate {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
 
 .ulboreder4 {
   margin-top: 45px;
   background: linear-gradient(0deg, #ffffff, #ffffff);
   border: 1px solid rgba(118, 54, 221, 0.15);
   padding: 0px;
+  margin: 25px 10px;
+  width: 46.5%;
 }
 
 .liheader {
@@ -504,9 +526,41 @@ li {
 
 .set_backgroung5 {
   background: linear-gradient(0deg, #ffffff, #ffffff);
-  border: 1px solid rgba(118, 54, 221, 0.15);
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* border: 1px solid rgba(118, 54, 221, 0.15);
+    margin-top: 30px;
+    margin-bottom: 30px; */
+}
+
+.paddond0 {
+  padding: 0px !important;
+}
+
+.paddondall {
+  padding: 10px;
+}
+
+.bordernone {
+  border: none !important;
+}
+
+.padding-left {
+  padding-left: 33px !important;
+}
+
+.paddinglt10 {
+  padding-left: 10px;
+}
+
+.paddingrt10 {
+  padding-right: 10px;
+}
+
+.padding-right {
+  padding-right: 33px !important;
+}
+
+.padding-btm {
+  padding-bottom: 33px !important;
 }
 
 .circle_text5 {
@@ -531,10 +585,10 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 58px;
-  height: 58px;
+  width: 60px;
+  height: 60px;
   background: #fdf4f1;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08); */
   border-radius: 100px;
   font-family: Gotham Rounded;
   font-style: normal;
@@ -543,6 +597,7 @@ li {
   line-height: 29px;
   text-align: center;
   color: #ffffff;
+  margin-left: 10px;
 }
 
 .header_title5 {
@@ -562,12 +617,14 @@ li {
 }
 
 /* page 6 */
+
 .milestone-ach {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 24px 0px 15px 0px;
 }
+
 .divtext6 {
   font-family: Gotham Rounded;
   font-style: normal;
@@ -575,6 +632,7 @@ li {
   font-size: 14px;
   line-height: 25px;
   color: #6e768a;
+  white-space: pre-line;
 }
 
 .achieved_title1 {
@@ -585,6 +643,8 @@ li {
   line-height: 19px;
   color: #6e768a;
   margin: 2px -1px 1px 14px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .achieved_title2 {
@@ -674,20 +734,42 @@ li {
   color: #43484b;
 }
 
+.doughnut-list {
+  flex-direction: column;
+  display: flex;
+  height: 95px;
+  min-width: 250px;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.doughnut-list p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #333333;
+}
+
 #scorcard {
-  margin-left: 21px;
+  margin-left: 26%;
   margin-top: 3px;
   width: 181px;
   height: 84px;
+  margin-bottom: 5%;
 }
 
 svg {
   fill: none;
-  stroke: red;
   stroke-width: 5px !important;
   stroke-linecap: round;
   /* -webkit-filter: drop-shadow( -3px -2px 5px gray);
-    filter: drop-shadow( -3px -2px 5px gray); */
+filter: drop-shadow( -3px -2px 5px gray); */
+}
+path {
+  stroke-linecap: round;
 }
 
 .scordcss {
@@ -699,7 +781,7 @@ svg {
   text-align: center;
   color: #43484b;
   top: -110px;
-  right: -50px;
+  right: -52px;
   position: absolute;
   min-width: 100px;
 }
@@ -707,29 +789,28 @@ svg {
 .scoredpercentage {
   font-family: Gotham Rounded;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 44px;
   line-height: 58px;
   text-align: center;
   color: #98e240;
   position: absolute;
   top: -45px;
-  right: -55px;
+  right: -45px;
 }
 
-#impactscorcard {
-  margin-top: 25px;
-  width: 108px;
-  height: 54px;
-  margin-bottom: 60px;
-  margin-left: 90px;
+.impactscorcard {
+  width: 111px;
+  height: 63px;
+  float: right;
+  margin-right: 45px;
 }
 
 /* #lineprogress {
-    margin: 20px;
-    width: 400px;
-    height: 8px;
-    position: relative;
+margin: 20px;
+width: 400px;
+height: 8px;
+position: relative;
 } */
 
 #lineprogress {
@@ -741,12 +822,12 @@ svg {
 }
 
 /* #lineprogress:after {
-    content: '';
-    display: block;
-    background: orange;
-    width: 50%;
-    height: 100%;
-    border-radius: 9px;
+content: '';
+display: block;
+background: orange;
+width: 50%;
+height: 100%;
+border-radius: 9px;
 } */
 
 .imp_percentage {
@@ -772,9 +853,9 @@ svg {
   padding: 0px;
   margin: 0px;
   position: absolute;
-  top: -75px;
+  top: -90px;
   min-width: 100px;
-  left: -33px;
+  left: -29px;
 }
 
 .verbalText {
@@ -798,4 +879,56 @@ svg {
 #progressline {
   position: relative;
   margin-bottom: 50px;
+}
+
+.table-bordered {
+  border: 25px solid #fff;
+}
+
+.textCstm {
+  font-family: Gotham Rounded;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 25px;
+  /* or 180% */
+  color: #6e768a;
+}
+
+.background-layout {
+  width: 46%;
+  margin: 7.5px;
+  padding: 11.74px;
+  background: rgba(255, 248, 232, 0.5);
+}
+
+.graph-line {
+  border: 1px dashed rgb(232, 234, 237);
+  height: 100px;
+  width: fit-content;
+  top: -110px;
+  left: 5px;
+  z-index: 0;
+  position: absolute;
+}
+
+.graph-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(67, 72, 75);
+  margin-bottom: 36px;
+}
+
+.graph-difference {
+  margin-top: -2px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #98e240;
+}
+
+.full-width {
+  width: 100%;
 }

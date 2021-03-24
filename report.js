@@ -97,47 +97,62 @@ function insertText() {
 // ----------------------------------------section 4
 
 function renderCalcMethlist() {
-  var calculateMethods = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  var calculateMethods = [1, 2, 3, 4];
+  var ksa1A = [1, 2, 3, 4];
+
+  var ksa2A = [];
+  var ksa1 = ksa1A.map((item, i) => {
+    return '<div class="row margin_zero calculatecss"><span class="activity_listing"></span><span class="activity_li_text">Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span></div>';
+  });
+
+  var ksa2 = ksa2A.map((item, i) => {
+    return '<div class="row margin_zero calculatecss"><span class="activity_listing_blue"></span><span class="activity_li_text">Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span></div>';
+  });
 
   calculateMethods.map((item, i) => {
-    var ksa = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    var ksal = [1, 2, 3, 4, 5, 6, 7];
-
-    var ksa1 = ksa.map((item, i) => {
-      return '<div class="row margin_zero calculatecss"><span class="activity_listing"></span><span class="activity_li_text">Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span></div>';
-    });
-
-    var ksa2 = ksal.map((item, i) => {
-      return '<div class="row margin_zero calculatecss"><span class="activity_listing_blue"></span><span class="activity_li_text">Active Listening </span><span class="activity_li_text activity_li_textLeft">48</span></div>';
-    });
-
     $("#calculate-tables").append(`
       
-      <div class=" ulboreder4 " >
+      <div class=" ulboreder4 " style="width:100%;margin: 16px 0px;">
           <div class="row margin_zero calculatecss">
               <center><span class="liheaderspan">Cognitive Parameters</span></center>
           </div>
-          <div class="row margin_zero calculatecss" style="background: #F22182;">
-              <center><span class="spanage">Age relevant KSA’s</span>
-              </center>
+
+         <div style="display:flex;">
+        
+           ${
+             ksa1.length > 0
+               ? `
+             <div style="flex:1;">
+               <div
+                 class=" margin_zero calculatecss"
+                 style="background: #F22182;"
+               >
+                 <center>
+                   <span class="spanage">Age relevant KSA’s</span>
+                 </center>
+               </div>
+               ${ksa1.join("")}
+             </div>
+           `
+               : ``
+           }
+               ${
+                 ksa2.length > 0
+                   ? `
+                   <div style="flex:1;">
+                     <div
+                       class=" margin_zero calculatecss"
+                       style="background: #389ACE;"
+                     >
+                       <center>
+                         <span class="spanage">Age relevant KSA’s</span>
+                       </center>
+                     </div>
+                     ${ksa2.join("")}
+                   </div>`
+                   : ``
+               }         
           </div>
-          ${ksa1.join("")}
-  
-          <div class="row margin_zero calculatecss" style="background: #389ACE;">
-              <center><span class="spanage">Age relevant KSA’s</span>
-              </center>
-          </div>
-  
-          ${ksa2.join("")}
-          <!-- <ul class="list-group">
-                  <center><span class="liheaderspan">
-                      <hl class="liheader">Cognitive Parameters</hl>
-                  </span>
-    
-                  </center>
-                  <li class="list-group-item4 ">Age relevant KSA’s</li>
-                  <li class="list-group-item4">Third item</li>
-              </ul> -->
       </div>    
       `);
   });
@@ -154,8 +169,7 @@ async function renderKsaAchieved() {
         console.log("#ksa-achieved", i);
         $("#ksa-achieved")
           .append(` <tr class="paddondall" style="margin:20px 0;">
-                            
-                        <td colspan="6" class="paddondall" >
+                        <td colspan="6" style="width:60%" class="paddondall" >
                             <div class="flex-container setimg5">
                                 <div class="circle_text55">
                                     <span> <img src="https://dev-mai-cms.s3.ap-south-1.amazonaws.com/fontfamily/fight.png" / style="height: 36px;
@@ -168,10 +182,8 @@ async function renderKsaAchieved() {
                     
                             <div style="padding: 10px 20px;">
                                 <span class="verbalText">
-                                    Children with a good Verbal Memory are able to quickly grasp information and learn
-                                    things faster. Since they now do not have to focus on the small procedures involved,
-                                    they can devote their
-                    
+                                Ability to concentrate on a task over a period of time without being
+                                distracted.                    
                                     <div style="margin-bottom: 10px; margin-left: 5px; margin-top: 10px;">
                                         <div style="position: relative; display: flex; justify-content: space-between;">
                                             <h5 style="font-weight: bold; font-size: 12px; line-height: 14px; color: rgb(67, 72, 75);">
@@ -179,11 +191,13 @@ async function renderKsaAchieved() {
                                             </h5>
                                         </div>
                                         <div class="w3-round-xlarge" style="display: flex; border-radius: 30px; height: 9.96px; position: relative; background:rgba(33, 150, 243, 0.3);">
-                                            <div class="w3-round-xlarge" style="border-radius: 30px; width: 70%; background:rgba(33, 150, 243, 0.4); height: 10px;">
+                                            <div class="w3-round-xlarge" style="border-radius: 30px; width: ${achieved}%; background:rgba(33, 150, 243, 0.4); height: 10px;">
                                             </div>
                                         </div>
                                         <div style="position: relative; margin-bottom: 20px;">
-                                            <h5 style="position: absolute; left: 65%; font-weight: bold; font-size: 12px; line-height: 14px; color: rgb(67, 72, 75);">
+                                            <h5 style="position: absolute; left: ${
+                                              achieved > 5 ? achieved - 5 : 0
+                                            }%; font-weight: bold; font-size: 12px; line-height: 14px; color: rgb(67, 72, 75);">
                                                 70%</h5>
                                             </div>
                                         </div>
@@ -191,23 +205,14 @@ async function renderKsaAchieved() {
                             </div>
                         </td>
                     
-                        <td colspan="6" class="paddondall">
+                        <td colspan="6"  style="width:40%" class="paddondall">
                             <table>
                                 <tbody>
                                     <tr>
                                         <td class="paddondall">
-                                            <div id="impactscorcard${i}" class="impactscorcard"></div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="paddondall">
-                                            <div style="margin: 0px auto 50px;">
-                                                <span class="verbalText">
-                                                    Children with a good Verbal Memory are able to quickly grasp
-                                                    information and learn things faster. Since they now do not have to
-                                                    focus on the small procedures involved, they can devote their
-                                                </span>
-                                            </div>
+                                        <div id="impactscorcard${i}change" class="impactscorcard">
+                                        <svg width="150" height="150" viewBox="0 0 120 120" style="stroke-linecap: round;"><path d="M 113 75 A 38 38 0 0 0 37 75" id="arc2" fill="none" stroke="#E2E2E2" stroke-linecap="round" stroke-width="7"></path><path d="M 85.60166202949071 38.50883994427616 A 38 38 0 0 0 37 75" id="arc1" fill="none" stroke="#7636DD" stroke-linecap="round" stroke-width="7"></path><text id="name" x="62%" y="49%" fill="#43484B" font-size="7px" font-weight="600" dominant-baseline="middle" text-anchor="middle">Impact Score</text><text id="name" x="62%" y="60%" fill="#43484B" font-size="14px" font-weight="bold" dominant-baseline="middle" text-anchor="middle">59%</text><circle id="smallCircle" cx="85.60166202949071" cy="38.50883994427616" r="7px" fill="#7636DD"></circle></svg>
+                                        </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -245,16 +250,11 @@ renderKsaAchieved().then(
       step: (state, bar) => {
         bar.path.setAttribute("stroke", state.color);
         var value = Math.round(bar.value() * 100);
-        if (value === 0) {
-          bar.setText("");
-        } else {
-          bar.setText(
-            "<p class='imp_scordcss'>Impact Score</p><p class='imp_percentage'>" +
-              value +
-              "%</p>"
-          );
-        }
-
+        bar.setText(
+          "<p class='imp_scordcss'>Impact Score</p><p class='imp_percentage'>" +
+            value +
+            "%</p>"
+        );
         bar.text.style.color = state.color;
       },
     });

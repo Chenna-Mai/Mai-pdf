@@ -233,12 +233,11 @@ li {
 /* page 2 */
 
 .container2 {
-  border-right: solid 25px #fff;
-  border-left: solid 25px #fff;
+  border: solid 25px #fff;
   background: rgba(118, 54, 221, 0.05);
   margin-top: 20px;
   padding: 0 20px 0 20px;
-  /* max-height: 100vh; */
+  min-height: 100vh;
   /* width: 595px; */
   /* margin-bottom: 15px; */
 }
@@ -443,6 +442,7 @@ li {
   /* margin: 15px; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .tablecalculate {
   display: flex;
   flex-wrap: wrap;
@@ -771,6 +771,7 @@ svg {
   /* -webkit-filter: drop-shadow( -3px -2px 5px gray);
 filter: drop-shadow( -3px -2px 5px gray); */
 }
+
 path {
   stroke-linecap: round;
 }
@@ -804,7 +805,7 @@ path {
 
 .impactscorcard {
   width: 111px;
-  /* height: 63px; */
+  height: 63px;
   float: right;
   margin-right: 45px;
 }

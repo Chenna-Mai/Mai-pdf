@@ -935,3 +935,17 @@ border-radius: 9px;
 .full-width {
   width: 100%;
 }
+
+/* Growth plan section */
+
+.growth-plan-head {
+  background: rgba(118, 54, 221, 0.05);
+}
+.horizontal-line {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.growth-plan-body {
+  width: 100%;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  border: 1px solid rgba(118, 54, 221, 0.15);
+}

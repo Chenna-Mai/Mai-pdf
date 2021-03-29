@@ -67,7 +67,60 @@ var chart = new Chart(ctx, {
     },
   },
 });
+//--------------------planned outcome graph---------------
+var ctx2 = document.getElementById("myChart2").getContext("2d");
+var chart2 = new Chart(ctx2, {
+  // The type of chart we want to create
+  type: "doughnut",
 
+  // The data for our dataset
+  data: {
+    // labels: ["Cognition", "Emotional", "Communication", "social", "Cognition"],
+    datasets: [
+      {
+        data: [70, 30],
+        label: "Total ",
+        backgroundColor: ["#7ED320", "#E5E5E5"],
+        borderWidth: 0,
+        fillColor: "#48A497",
+        strokeColor: "#48A4D1",
+        height: "60px",
+        width: "60px",
+      },
+    ],
+  },
+
+  // Configuration options go here
+  options: {
+    cutoutPercentage: 80,
+    circumference: 2 * Math.PI,
+    rotation: 1.5 * Math.PI,
+    legend: {
+      display: true,
+      position: "right",
+      align: "middle",
+      fullWidth: true,
+      labels: {
+        boxWidth: 10,
+        boxHeight: 8,
+        fontSize: 14,
+        fontColor: "#333333",
+        fontFamily: "Lato",
+      },
+      layout: {
+        padding: {
+          left: 10,
+          right: 0,
+          top: 0,
+          bottom: 0,
+        },
+      },
+      animation: {
+        // animateScale: true
+      },
+    },
+  },
+});
 // ----------------------------------------section 3
 
 function insertText() {
